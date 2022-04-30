@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_xb2/post/create/components/post_create_form.dart';
 
 /// 添加文章页面
 class PostCreate extends StatelessWidget {
@@ -6,11 +7,12 @@ class PostCreate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Icon(
-        Icons.add_a_photo_outlined,
-        size: 128,
-        color: Colors.black12,
+    return SingleChildScrollView(
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        child: const SafeArea(
+          child: PostCreateForm(),
+        ),
       ),
     );
   }

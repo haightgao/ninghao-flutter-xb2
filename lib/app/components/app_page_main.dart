@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_xb2/playground/playground.dart';
 import 'package:flutter_xb2/post/create/post_create.dart';
 import 'package:flutter_xb2/post/index/post_index.dart';
 import 'package:flutter_xb2/user/profile/user_profile.dart';
@@ -18,6 +19,9 @@ class AppPageMain extends StatelessWidget {
 
     /// 用户
     const UserProfile(),
+
+    /// 练习
+    const Playground(),
   ];
 
   @override
